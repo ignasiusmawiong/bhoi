@@ -1,0 +1,117 @@
+/* General Styles */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about-img {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-img img {
+    width: 100%;
+    display: block;
+}
+
+.about-img button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 8px 16px; /* Adjusted button padding */
+    font-size: 14px; /* Adjusted button font size */
+    cursor: pointer;
+    background-color: #2ca77c; 
+    color: white;
+    border: none; 
+    border-radius: 5px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.about-img button span {
+    font-weight: 600;
+    font-size: 16px; /* Adjusted font size for button text */
+}
+
+.about-us-text {
+    padding: 20px 50px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px; 
+    color: #333; 
+}
+
+.about-us-text p {
+    line-height: 1.6;
+    color: #555;
+    padding-right: 30%;
+    text-align:justify; 
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.about-us-text ul {
+    padding-right: 30%;
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+}
+
+.about-us-text ul li {
+    margin-bottom: 10px;
+}
+
+.about-us-text span {
+    display: inline-block; 
+    font-weight: bold;
+    margin-top: 10px; 
+}
+
+/* Media Queries */
+@media (max-width: 820px) {
+    .about-img button {
+        padding: 6px 12px; /* Adjusted button padding for tablets */
+        font-size: 12px; /* Adjusted button font size for tablets */
+        top: 65%; /* Move the button down a bit for tablets */
+    }
+
+    .about-us-text p,
+    .about-us-text ul {
+        padding-right: 20%; /* Adjusted text padding for tablets */
+    }
+
+    .about-img button span {
+        font-size: 14px; /* Adjusted font size for button text */
+    }
+}
+
+@media (max-width: 375px) {
+    .about-img button {
+        padding: 1px 8px; /* Adjusted button padding for phones */
+        top: 70%; /* Move the button down a bit for phones */
+        font-size: 10px; /* Adjusted button font size for phones */
+        
+    }
+
+    .about-us-text p,
+    .about-us-text ul {
+        padding-right: 10%; /* Adjusted text padding for phones */
+    }
+
+    .about-img button span {
+        font-size: 12px; /* Adjusted font size for button text */
+        border: 1px red solid;
+    }
+}

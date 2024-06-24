@@ -1,0 +1,68 @@
+/* Category.css */
+
+.category {
+    max-width: 600px;
+    max-height: 400px;
+    margin: 200px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: 'roboto';
+
+  }
+  
+  .category h1 {
+    margin-bottom: 20px;
+  }
+  
+  .category p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .donate-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button[type='submit'] {
+    padding: 10px 20px;
+    background-color: #2ca77c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button[type='submit']:hover {
+    background-color: #218c65;
+  }
+  .donate-but{
+    font-size: 18px;
+    font-family: sans-serif;
+    background: transparent;
+    border: none;
+  }
+  .donate-but span {
+    color: white;
+  }

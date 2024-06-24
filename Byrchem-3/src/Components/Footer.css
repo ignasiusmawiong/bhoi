@@ -1,0 +1,103 @@
+/* Footer.css */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+footer {
+  background: linear-gradient(135deg, #352c50, #4cadaf);
+  color: #ffffff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+
+.footer-logo h2 {
+  font-family: 'Italiana', serif;
+  font-size: 28px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-links, .footer-socials {
+  margin-bottom: 20px;
+}
+
+.footer-links ul, .footer-socials ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links li, .footer-socials li {
+  margin: 0 10px;
+}
+
+.footer-links a, .footer-socials a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover, .footer-socials a:hover {
+  color: #ffdd57;
+}
+
+.footer-socials i {
+  font-size: 24px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #7f8c8d;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  color: #d1d1d1;
+}
+
+/* Media Queries */
+@media (max-width: 820px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-links ul,
+  .footer-socials ul {
+    flex-wrap: wrap;
+  }
+
+  .footer-links li,
+  .footer-socials li {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer-logo h2 {
+    font-size: 24px;
+  }
+
+  .footer-links a,
+  .footer-socials a {
+    font-size: 16px;
+  }
+
+  .footer-socials i {
+    font-size: 20px;
+  }
+
+  .footer-bottom p {
+    font-size: 12px;
+  }
+}

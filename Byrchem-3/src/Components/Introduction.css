@@ -1,0 +1,55 @@
+/* General Introduction Styles */
+.introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px 0;
+    background: #2ca77c;
+}
+
+.text1, .text2 {
+    margin: 15px 0;
+    color: #ffff;
+}
+
+.text1 p {
+    font-size: 28px;
+    font-family: 'roboto';
+}
+
+.text2 p {
+    font-size: 20px;
+    color: rgb(223, 223, 223);
+}
+
+/* Media Queries for Tablets */
+@media (max-width: 820px) {
+    .introduction {
+        padding: 60px 0; /* Reduce padding for tablets */
+    }
+
+    .text1 p {
+        font-size: 20px; /* Adjust font size for tablets */
+    }
+
+    .text2 p {
+        font-size: 16px; /* Adjust font size for tablets */
+    }
+}
+
+/* Media Queries for Phones */
+@media (max-width: 375px) {
+    .introduction {
+        padding: 40px 0; /* Reduce padding for phones */
+    }
+
+    .text1 p {
+        font-size: 14px; /* Adjust font size for phones */
+    }
+
+    .text2 p {
+        font-size: 12px; /* Adjust font size for phones */
+    }
+}

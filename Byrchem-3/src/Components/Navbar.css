@@ -1,0 +1,156 @@
+/* General Navbar Styles */
+.nav-logo {
+    
+   
+}
+
+.nav-logo h2 {
+    font-family: magneto, sans-serif;
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    
+}
+.nav-logo h3{
+    bottom: 20px;
+    margin-top: -24px;
+    font-family: sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: #fff;
+    z-index: 1;
+    transition: background 0.3s;
+}
+
+.navbar.transparent {
+    background: transparent;
+}
+
+.navbar.solid {
+    background: #2ca77c;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+    font-size: 20px;
+    padding: 20px 0;
+    font-family: sans-serif, Georgia;
+    font-weight: 500;
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+.nav-menu li a {
+    color: white;
+}
+
+.nav-menu li:last-child {
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-size: 20px;
+    padding: 0 2px;
+}
+/* Add the following styles to your Navbar.css file */
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0px ;
+    color: #ffff;
+    margin: 0 40px;
+
+  }
+  
+  .nav-toggle:focus {
+    outline: none;
+  }
+  
+  .nav-menu.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background: transparent;
+    position: absolute;
+    top: 60px;
+    left: 20%;
+    width: 100%;
+    z-index: 1;
+    font-size: 15px;
+  }
+  
+  /* Hide toggle button on big screens */
+  @media (min-width: 768px) {
+   .nav-toggle {
+      display: none;
+    }
+   .nav-menu {
+      display: flex;
+    }
+    .nav-logo h2 {
+        
+        
+        font-style: normal;
+        font-weight: 600;
+        font-size: 60px;
+        
+    }
+    .nav-logo h3{
+        margin-top: -18px;
+    }
+  }
+  
+  /* Show toggle button on small screens */
+  @media (max-width: 767px) {
+   .nav-toggle {
+      display: block;
+    }
+
+   .nav-menu {
+      display: none;
+      margin-top: 10px;
+      gap: 30px;
+      margin-right: 40px;
+      margin-left: 30px;
+    }
+   .nav-menu.open {
+      display: flex;
+    }
+    .nav-logo h2 {
+        
+        
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+    }
+    .nav-logo h3{
+        margin-top: -10px;
+        font-size: 12px;
+        font-weight: lighter;
+    
+    }
+  }
